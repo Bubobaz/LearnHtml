@@ -99,12 +99,9 @@ ul.nav li a {
   color: initial;
   text-decoration: initial;
 }
-/*
-  Slider
-*/
 
-.section .slider,
-.section .footer {
+
+.section .slider{
   background: #333;
 }
 
@@ -204,45 +201,23 @@ h1.hero:after {
   margin: 0 1%;
 }
 
-.col.two {
-  width: 40%;
-  margin: 0 2.5%;
-  padding: 0 2.5%;
-}
+
 
 .col.extrapad {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-.col .service,
 .col .feature {
   font-size: 21px;
   font-weight: 300;
   font-family: 'Roboto Slab', sans-serif;
 }
 
-.col .service:after {
-  content: "";
-  width: 50px;
-  position: relative;
-  border-bottom: 1px solid #eee;
-  display: block;
-  text-align: center;
-  margin: auto;
-  margin-top: 15px;
-}
-
 .col .feature {
   font-size: 19px;
 }
 
-.col h1.side,
-.col p.side,
-.col span.side:first-of-type {
-  margin-left: 50px;
-  text-align: left;
-}
+
 
 .col .icon {
   border-radius: 50%;
@@ -254,31 +229,15 @@ h1.hero:after {
   transition: background 0.25s linear, color 0.25s linear;
 }
 
-.col .icon.side {
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  top: -15px;
-  height: 50px;
-  width: 50px;
-}
 
 .col:hover > .icon {
   background: #F44336;
   color: white;
 }
-
-.col:hover > .icon.side {
-  background: initial;
-  color: initial;
-}
-
 .responsivegroup {
   display: none;
 }
-/*
-  Column specifics
-*/
+
 
 .section.bg p, h1 {
   padding: 0 1%;
@@ -292,6 +251,23 @@ h1.hero:after {
   font-size: 1.5em;
   font-weight: bold;
 }
+.col .imgholder a{
+  text-decoration: normal;
+}
+.col .imgholder ol{
+  display: grid;
+}
+.col .imgholder li{
+  padding: 11px;
+}
+.col .imgholder table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 12px;
+  padding: 6px;
+  text-align: left;
+  height: 5px;
+}
 .col .imgholder {
   display: grid;
   justify-items: center;
@@ -302,7 +278,6 @@ h1.hero:after {
   border: 0 solid #3d7e9a;
   border-width: 5px;
 }
-
 .col.bg {
   background: #FFF;
 }
@@ -314,9 +289,7 @@ h1.hero:after {
 .col span.feature {
   font-size: 20px;
 }
-/*
-  Text
-*/
+
 
 .container > h1:not(.hero) {
   margin-bottom: 30px;
@@ -340,34 +313,6 @@ h2 {
   font-weight: 400;
   font-size: 18px;
 }
-
-.left,
-.left > h1,
-.left > p {
-  text-align: left;
-}
-
-.reset {
-  text-align: left !important;
-}
-
-.reset:after {
-  display: none !important;
-}
-/* 
-  Slider with Content
-*/
-
-.white h1,
-.white h2,
-.white p,
-.white div,
-.white a {
-  color: #fff;
-}
-/*
-  Responsive
-*/
 
 .group:after {
   content: "";
@@ -441,7 +386,7 @@ h2 {
 }
 
 @media all and (max-width:450px) {
-  .col, .col.four, .col.three, .col.two {
+  .col, .col.four, .col.three{
     display: block;
     width: 95%;
     padding: 0;
