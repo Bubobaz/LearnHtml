@@ -6,6 +6,7 @@ body {
 
 .section {
   width: 100%;
+  
 }
 
 .container {
@@ -24,7 +25,6 @@ body {
         color: rgb(53, 52, 52);
         justify-self: center;
         margin-left: 10%;
-        font-size: 14px;
         font-family: Roboto, 'Open Sans', Arial, sans-serif;
         overflow: hidden;
 }
@@ -137,44 +137,51 @@ h1.hero:after {
   margin: auto;
   margin-top: 15px;
 }
-
-.call {
-  color: white;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.call span {
-  display: inline;
-  border: 1px solid white;
-  padding: 8px 13px;
-  font-size: 20px;
-  transition: background 0.15s linear;
-}
-
-.call span:hover {
-  background: rgba(255, 255, 255, 0.1);
-  cursor: pointer;
-}
-/* 
-  Columns 
-*/
 .col.Teor{
   max-width:70%;
+  max-height:100%;
   padding: 5px;
   border-style: solid;
   border-radius: 20px;
   box-shadow: 3px 3px 5px 6px #ccc;
   
 }
-.col.Teor li{
+.col.Teor ol#first{
+  margin-top: -35px;
+}
+.col.Teor  ol#first li{
   font-size: 16px;
+  line-height: 1px; 
+  margin-top: -10px;
+}
+.col.Teor  ol#second li{
+  font-size: 16px;
+  padding: 5px;
+}
+.code{
+  width: 70%;
+  height: 78%;
+  margin: 0 auto;
+  background-color: #eee;
+  border: 0 solid #3d7e9a;
+  border-left-width: 5px;
+}
+.col.Teor ul{
+  margin-top: -40px;
+  list-style-type: decimal;
+  display: flex;
+  justify-content: space-between;
+}
+.col.Teor ul li{
+  font-size: 14px;
+  background-color: rgb(224, 239, 241);
+  max-height: 100%;
+  max-width: 23%;
+  padding: 3px;
+  border-radius: 20px;
 }
 .exmpl{
   margin: auto;
-}
-.col.Teor h1{
-
 }
 .col {
   float: left;
@@ -281,12 +288,19 @@ h1.hero:after {
 .group.margin {
   margin-bottom: 20px;
 }
-
+.col .imgholder h2{
+  font-size: 1.5em;
+  font-weight: bold;
+}
 .col .imgholder {
+  display: grid;
+  justify-items: center;
+  line-height: 1px;  
   height: 300px;
   width: 100%;
-  background: #333;
-  transition: background 0.3s linear;
+  background: rgb(230, 230, 230);
+  border: 0 solid #3d7e9a;
+  border-width: 5px;
 }
 
 .col.bg {
@@ -295,10 +309,6 @@ h1.hero:after {
 
 .col.pointer {
   cursor: pointer;
-}
-
-.col.bg:hover .imgholder {
-  background: #555;
 }
 
 .col span.feature {

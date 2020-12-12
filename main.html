@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LearnHtml</title>
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
@@ -28,7 +29,6 @@
           <div class="container slidercontent">
             <h1 class="hero">Html</h1>
             <h2 class="hero">Язык гипертекстовой разметки</h2>
-            <div class="call"><span>Wow</span></div>
           </div>
         </div>
       </div>
@@ -56,42 +56,68 @@
       </div>
        <div class="Teor">
           <div class="col Teor">
+            <h1>Строение Html документа</h1>
+            <div class="code">
+            <pre>
+              <ol id="first">
+                <li><font color="#905" >&lt!DOCTYPE html&gt</font></li>
+                <li><font color="#905" >&lthtml&gt</font></li>
+                <li><font color="#905">  &lthead&gt</font></li>
+                <li><font color="#905">   &ltmeta <font color="#690">charset=</font><font color="#4660b7">"utf-8"</font>&gt</font></li>
+                <li><font color="#905">   &lttitle&gt</font>Моя тестовая страница<font color="#905">&lt/title&gt</font></li>
+                <li><font color="#905" >  &lt/head&gt</font></li>
+                <li><font color="#905" >  &ltbody&gt</font></li>
+                <li><font color="#4660b7" >   &ltp&gt</font>Тут находятся все элементы отображаемые на странице<font color="#4660b7" >&lt/p&gt</font></li>
+                <li><font color="#4660b7" >   &ltp&gt</font><font color="black">My cat is very grumpy</font><font color="#4660b7">&lt/p&gt</font></li>
+                <li><font color="#905" >  &lt/body&gt</font></li>
+                <li><font color="#905" >&lt/html&gt</font></li>
+              </ol>
+            </pre>
+          </div>
+            <ul>
+              <li><font color="#905" >&lt!DOCTYPE html&gt</font> - тип документа. Данная конструкция всегда указывается в начале документа для правильного "понимания" браузером того, какая версия HTML используется при построении документа.</li>
+              <li><font color="#905" >&lthtml&gt</font> - является корневым элементом документа. Все остальные элементы содержатся внутри тегов <font color="#905" >&lthtml&gt</font>...<font color="#905" >&lt/html&gt</font>. Все, что находится за пределами тегов, не воспринимается браузером как код HTML и никак им не обрабатывается.</li>
+              <li>Раздел <font color="#905">  &lthead&gt</font>...<font color="#905">  &lt/head&gt</font> содержит техническую информацию о странице: заголовок<font color="#905">&lttitle&gt </font>, кодировку <font color="#905">   &ltmeta <font color="#690">charset=</font><font color="#4660b7">"utf-8"</font>&gt</font>  и т.д. Введенная в нем информация не отображается в окне браузера, однако содержит данные, которые указывают браузеру, как следует обрабатывать страницу.</li>
+              <li>Тег <font color="#905" >  &ltbody&gt</font> определяет содержимое (контент) HTML-документа, которое отображается в окне браузера (текст, ссылки, картинки (изображения), таблицы, списки и т.д.). Он должен быть единственным в документе и всегда должен располагаться внутри элемента <font color="#905" >&lthtml&gt</font>, сразу после элемента <font color="#905" >  &lt/head&gt</font>.</li>
+            </ul>
+          </div>
+          <div class="col Teor">
             <h1>Рассмотрим данный пример Html кода</h1>
             <img class="exmpl" src="https://media.prod.mdn.mozit.cloud/attachments/2014/11/14/9347/c07aa313dbdd667585430f4eca354dbd/grumpy-cat-small.png" width="50%" alt="пример кода">
-            <ol>
-              <li>Microsoft</li>
-              <li>Google</li>
-              <li>Apple</li>
-              <li>IBM</li>
+            <ol id="second">
+              <li>Открывающий тег (Opening tag): Состоит из имени элемента (в данном случае, "p"), заключенного в открывающие и закрывающие угловые скобки.  Открывающий тег указывает, где элемент начинается или начинает действовать, в данном случае — где начинается абзац.</li>
+              <li>Закрывающий тег (Closing tag): Это то же самое, что и открывающий тег, за исключением того, что он включает в себя косую черту перед именем элемента. Закрывающий элемент указывает, где элемент заканчивается, в данном случае — где заканчивается абзац. Отсутствие закрывающего тега является одной из наиболее распространенных ошибок начинающих и может приводить к ошибкам отображения элементов.</li>
+              <li>Контент (Content): Это контент элемента, который в данном случае является просто текстом.</li>
+              <li>Элемент(Element): Открывающий тег, закрывающий тег и контент вместе составляют элемент.</li>
             </ol>
           </div>
-          <div class="col Teor">
-            <h1>Теория</h1>
-            <p>С помощью разметки мы создали структуру и наполнение документа, а теперь будем внешне оформлять. Вот для этого и служат каскадные таблицы стилей.    </p>
-          </div>
           <div class="responsivegroup"></div>
-          <div class="col Teor">
-            <h1>Теория</h1>
-            <p>JS помогает сделать HTML-разметку более интерактивной. То есть, практически вся динамика, которую вы можете наблюдать на сайте создана с помощью JavaScript.</p>
-          </div>
-          <div class="col Teor">
-            <h1>Теория</h1>
-            <p>PHP позволяет соединить все страницы в единое целое и предоставить сайту функции, без которых эти страницы не будут работать как единое целое: авторизоваться на сайте, добавить товары в корзину и сделать заказ. </p>
-          </div>
           <div class="group"></div>
       </div>
       <div class="section bg">
         <div class="container">
-          <h1>Теория</h1>
-          <h2>Начнем с небольших примеров</h2>
+          <h1>Примеры</h1>
+          <h2>Начнем с элементов, которые могут быть использованны в теге <strong>&ltbody&gt</strong></h2>
           <div class="col three bg nopad pointer">
-            <div class="imgholder"></div>
-            <h1 class="feature">Wow</h1>
-            <p>Wow wow</p>
+            <div class="imgholder"> 
+              <h1><font color="#4660b7">&lth1&gt</font>Заголовок<font color="#4660b7">&lt/h1&gt</font></h1>
+              <h2><font color="#4660b7">&lth2&gt</font>Заголовок<font color="#4660b7">&lt/h2&gt</font></h2>
+              <h3><font color="#4660b7">&lth3&gt</font>Заголовок<font color="#4660b7">&lt/h3&gt</font></h3>
+              <h4><font color="#4660b7">&lth4&gt</font>Заголовок<font color="#4660b7">&lt/h4&gt</font></h4>
+              <h5><font color="#4660b7">&lth5&gt</font>Заголовок<font color="#4660b7">&lt/h5&gt</font></h5>
+              <h6><font color="#4660b7">&lth6&gt</font>Заголовок<font color="#4660b7">&lt/h6&gt</font></h6>
+            </div>
+            <h1 class="feature">Теги заголовков</h1>
+            <p>Элементы заголовка позволяют вам указывать определенные части вашего контента в качестве заголовков или подзаголовков. Точно так же, как книга имеет название, названия глав и подзаголовков, HTML документ может содержать то же самое. HTML включает шесть уровней заголовков <font color="#4660b7">&lth1&gt–&lth6&gt</font></p>
           </div>
           <div class="col three bg nopad pointer">
-            <div class="imgholder"></div>
-            <h1 class="feature">Wow</h1>
+            <div class="imgholder">
+              <br>
+              <em><font color="#4660b7">&ltem&gt</font>Курсивный шрифт<font color="#4660b7">&lt/em&gt</font></em>
+              <b><font color="#4660b7">&ltb&gt</font>Жирный шрифт<font color="#4660b7">&lt/b&gt</font></b>
+            <p>Выделение <font color="#4660b7">&ltmark&gt</font><mark>текста</mark><font color="#4660b7">&lt/mark&gt</font></p>
+            </div>
+            <h1 class="feature">Форматирование текста</h1>
             <p>Wow wow wow</p>
           </div>
           <div class="col three bg nopad pointer">
