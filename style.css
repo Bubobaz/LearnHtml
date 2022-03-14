@@ -20,13 +20,11 @@ body {
   overflow: hidden;
 }
 .Teor{
-        display: grid;
-        width: 80%;
-        color: rgb(53, 52, 52);
-        justify-self: center;
-        margin-left: 10%;
-        font-family: Roboto, 'Open Sans', Arial, sans-serif;
-        overflow: hidden;
+    display: grid;
+    color: rgb(53, 52, 52);
+    justify-self: center;
+    font-family: Roboto, 'Open Sans', Arial, sans-serif;
+    overflow: hidden;
 }
 
 .section .container {
@@ -135,7 +133,7 @@ h1.hero:after {
   margin-top: 15px;
 }
 .col.Teor{
-  max-width:70%;
+  max-width:80%;
   max-height:100%;
   padding: 5px;
   border-style: solid;
@@ -170,12 +168,13 @@ h1.hero:after {
   justify-content: space-between;
 }
 .col.Teor ul li{
-  font-size: 14px;
-  background-color: rgb(224, 239, 241);
+  font-size: 13px;
+  background-color: lightcyan;
   max-height: 100%;
   max-width: 23%;
-  padding: 3px;
-  border-radius: 20px;
+  line-height: 130%;
+  padding: 1px;
+  border-radius: 5px;
 }
 .exmpl{
   margin: auto;
@@ -263,27 +262,23 @@ h1.hero:after {
 .col .imgholder table,th,td{
   border: 1px solid black;
   border-collapse: collapse;
-  font-size: 12px;
-  padding: 6px;
+  font-size: 11px;
+  padding: 9px;
   text-align: left;
   height: 5px;
 }
 .col .imgholder {
   display: grid;
   justify-items: center;
+  align-items: center;
   line-height: 1px;  
-  height: 300px;
-  width: 100%;
+  height: 335px;
   background: rgb(230, 230, 230);
   border: 0 solid #3d7e9a;
   border-width: 5px;
 }
 .col.bg {
-  background: #FFF;
-}
-
-.col.pointer {
-  cursor: pointer;
+  background: lightcyan;
 }
 
 .col span.feature {
