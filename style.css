@@ -275,7 +275,8 @@ h1.hero:after {
   border-width: 5px;
 }
 .col.bg {
-  background: lightcyan;
+  background: #fff;
+  border-radius: 0 0 30px 30px;
 }
 
 .col span.feature {
