@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image"  content="https://blog.udacity.com/wp-content/uploads/2020/06/HTML_Blog-scaled.jpeg" />
+    <title>Contacts</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/2048px-HTML5_Badge.svg.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/form.css">
+    <script src="./src/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="hold">
+        <div class="header">
+          <div class="container">
+            <div id="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/2048px-HTML5_Badge.svg.png" height="65" alt="">
+            </div>
+            <ul class="nav">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="test.html">Тест</a></li>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="slider">
+          <div class="container slidercontent">
+            <h1 class="hero">Контакты</h1>
+          </div>
+        </div>
+      </div>
+      <div class="section bg">
+        <div class="container">
+              <p>Адрес - на данный момент у нас нет физической точки, но мы с удовольствием откроем свое школу в будущем</p>
+              <p>Телефон - 8 800 888 00 88</p>
+              <p>Режим работы - пн-пт с 10:00 до 19:00</p>
+        </div>
+      </div>
+      <form action="./src/php/contact.php">
+        <h1>Связаться с нами</h1>
+        
+        <fieldset>
+          
+          <legend><span class="number">1</span> Базовая информация</legend>
+        
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required>
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label>Возраст</label>
+          <input type="radio" id="under_14" value="under_14" name="age"><label for="under_14" class="light" required>Меньше 14</label><br>
+          <input type="radio" id="over_14" value="over_14" name="age"><label for="over_14" class="light">Больше 14</label>
+        </fieldset>
+        <fieldset>  
+        
+        <legend><span class="number">2</span> Ваши интересы</legend>
+         <label for="job">Чем бы вы хотели заниматься</label>
+          <select id="job" name="job">
+            <optgroup label="Web">
+              <option value="frontend_developer">Front-End Developer</option>
+              <option value="php_developer">PHP Developer</option>
+              <option value="python_developer">Python Developer</option>
+              <option value="web_designer">Web Designer</option>
+            </optgroup>
+            <optgroup label="Mobile">
+              <option value="android_developer">Android Developer</option>
+              <option value="ios_developer">IOS Developer</option>
+              <option value="mobile_designer">Mobile Designer</option>
+            </optgroup>
+          </select>
+          
+          <label>Интересы:</label>
+          <input type="checkbox" id="development" value="1" name="development"><label class="light" for="development">Разработка</label><br>
+          <input type="checkbox" id="design" value="1" name="design"><label class="light" for="design">Дизайн</label><br>
+          <input type="checkbox" id="analysis" value="1" name="analysis"><label class="light" for="analysis">Анализ данных</label>
+          
+         </fieldset>
+       
+        <button type="submit">Отправить</button>
+        
+       </form>
+        </div>
+      </div>
+      <footer class="site-footer">
+        <div>
+          <div class="row">
+            <div class="first-block">
+              <h6>О нас</h6>
+              <p class="text-justify">Компания LearnHTML предоставляют бесплатный доступ к основам языка разметки гипертекста HTML5 и предлагают всем без исключения овладеть данными навыками для общего развития и для развития своих Hard skills.</p>
+            </div>
+  
+            <div class="second-block">
+              <h6>Категории</h6>
+              <ul class="footer-links">
+                <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML">HTML5</a></li>
+                <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS">CSS</a></li>
+                <li><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript">JavaScript</a></li>
+                <li><a href="https://developer.mozilla.org/ru/docs/Glossary/PHP">PHP</a></li>
+              </ul>
+            </div>
+  
+            <div class="last-block">
+              <h6>Навигация</h6>
+              <ul class="footer-links">
+                <li><a href="test.html">Тест</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="about.html">О нас</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div>
+          <div class="row-2">
+            <div>
+              <p class="copyright-text">Copyright &copy; 2022 все права защищены 
+              <a href="#">LearnHTML</a>.
+              </p>
+            </div>
+  
+            <div>
+              <ul class="social-icons">
+                <li><a class="fa fa-facebook" href="#"></a></li>
+                <li><a class="fa fa-twitter" href="#"></a></li>
+                <li><a class="fa fa-whatsapp" href="#"></a></li>
+                <li><a class="fa fa-linkedin" href="#"></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+</body>
+<script src="./src/js/contact.js"></script>
+</html>

@@ -6,8 +6,20 @@
     <meta property="og:image"  content="https://blog.udacity.com/wp-content/uploads/2020/06/HTML_Blog-scaled.jpeg" />
     <title>LearnHtml</title>
     <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/2048px-HTML5_Badge.svg.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <script src="./src/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      @media screen and (max-width:1200px) {
+        .nopad{
+          display: contents;
+          width: auto;
+        }
+        .col.three{
+          min-width: 380px;
+        }
+      }
+    </style>
 </head>
 <body>
     <div class="hold">
@@ -18,8 +30,9 @@
             </div>
             <ul class="nav">
               <li><a href="index.html">Главная</a></li>
-              <li><a href="#">Тесты</a></li>
-              <li><a href="info.html">Об авторе</a></li>
+              <li><a href="test.html">Тест</a></li>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
             </ul>
           </div>
         </div>
@@ -35,20 +48,20 @@
       <div class="section">
         <div class="container">
           <div class="col four">
-            <h1 class="icon">HTML</h1>
+            <h1 class="icon"><a href="https://developer.mozilla.org/ru/docs/Web/HTML">HTML</a></h1>
             <p>Любая страница в интернете состоит из множества тегов. С их помощью мы объявляем заголовки, параграфы, ссылки, картинки и другие элементы.</p>
           </div>
           <div class="col four">
-            <h1 class="icon">CSS</h1>
+            <h1 class="icon"><a href="https://developer.mozilla.org/ru/docs/Web/CSS">CSS</a></h1>
             <p>С помощью разметки мы создали структуру и наполнение документа, а теперь будем внешне оформлять. Вот для этого и служат каскадные таблицы стилей.    </p>
           </div>
           <div class="responsivegroup"></div>
           <div class="col four">
-            <h1 class="icon">Js</h1>
+            <h1 class="icon"><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript">Js</a></h1>
             <p>JavaScript помогает сделать HTML-разметку более интерактивной. То есть, практически вся динамика, которую вы можете наблюдать на сайте создана с помощью JavaScript.</p>
           </div>
           <div class="col four">
-            <h1 class="icon">PHP</h1>
+            <h1 class="icon"><a href="https://developer.mozilla.org/ru/docs/Glossary/PHP">PHP</a></h1>
             <p>PHP позволяет соединить все страницы в единое целое и предоставить сайту функции, без которых эти страницы не будут работать как единое целое: авторизоваться на сайте, добавить товары в корзину и сделать заказ. </p>
           </div>
           <div class="group"></div>
@@ -83,7 +96,7 @@
           </div>
           <div class="col Teor">
             <h1>Рассмотрим данный пример HTML кода</h1>
-            <img class="exmpl" src="img/tag_example.png" width="60%" alt="пример кода">
+            <img class="exmpl" src="./src/img/tag_example.png" alt="пример кода">
             <ol id="second">
               <li>Открывающий тег (Opening tag): Состоит из имени элемента (в данном случае, "p"), заключенного в открывающие и закрывающие угловые скобки.  Открывающий тег указывает, где элемент начинается или начинает действовать, в данном случае — где начинается абзац.</li>
               <li>Закрывающий тег (Closing tag): Это то же самое, что и открывающий тег, за исключением того, что он включает в себя косую черту перед именем элемента. Закрывающий элемент указывает, где элемент заканчивается, в данном случае — где заканчивается абзац. Отсутствие закрывающего тега является одной из наиболее распространенных ошибок начинающих и может приводить к ошибкам отображения элементов.</li>
@@ -130,7 +143,7 @@
             <div class="imgholder">
               <p><font color="#4660b7">&lta href=<font color="green">"ссылка на сайт"</font>&gt</font><a href="">Текст ссылки</a><font color="#4660b7">&lt/a&gt</font></p>
               <p><font color="#4660b7">&ltimg src=<font color="green">"путь_до_картинки.png"</font> alt=<font color="green">"текст"</font> &gt</font></p>
-              <img src="img/preview.png" height="50" alt="картинка">
+              <img src="./src/img/preview.png" height="50" alt="картинка">
               <ol><font color="#4660b7">&ltol&gt</font>
                 <li><font color="#4660b7">&ltli&gt</font>1 элемент списка<font color="#4660b7">&lt/li&gt</font></li>
                 <li><font color="#4660b7">&ltli&gt</font>2 элемент списка<font color="#4660b7">&lt/li&gt</font></li>
@@ -174,5 +187,53 @@
         </div>
       </div>
       </div>
+      <footer class="site-footer">
+        <div>
+          <div class="row">
+            <div class="first-block">
+              <h6>О нас</h6>
+              <p class="text-justify">Компания LearnHTML предоставляют бесплатный доступ к основам языка разметки гипертекста HTML5 и предлагают всем без исключения овладеть данными навыками для общего развития и для развития своих Hard skills.</p>
+            </div>
+  
+            <div class="second-block">
+              <h6>Категории</h6>
+              <ul class="footer-links">
+                <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML">HTML5</a></li>
+                <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS">CSS</a></li>
+                <li><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript">JavaScript</a></li>
+                <li><a href="https://developer.mozilla.org/ru/docs/Glossary/PHP">PHP</a></li>
+              </ul>
+            </div>
+  
+            <div class="last-block">
+              <h6>Навигация</h6>
+              <ul class="footer-links">
+                <li><a href="test.html">Тест</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="about.html">О нас</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div>
+          <div class="row-2">
+            <div>
+              <p class="copyright-text">Copyright &copy; 2022 все права защищены 
+              <a href="#">LearnHTML</a>.
+              </p>
+            </div>
+  
+            <div>
+              <ul class="social-icons">
+                <li><a class="fa fa-facebook" href="#"></a></li>
+                <li><a class="fa fa-twitter" href="#"></a></li>
+                <li><a class="fa fa-whatsapp" href="#"></a></li>
+                <li><a class="fa fa-linkedin" href="#"></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
 </body>
 </html>

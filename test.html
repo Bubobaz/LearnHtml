@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/2048px-HTML5_Badge.svg.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/test.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="hold">
+        <div class="header">
+          <div class="container">
+            <div id="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/2048px-HTML5_Badge.svg.png" height="65" alt="">
+            </div>
+            <ul class="nav">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="test.html">Тест</a></li>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="slider">
+          <div class="container slidercontent">
+            <h1 class="hero">Тест</h1>
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <form action="./src/php/send.php">
+            <div class="col bg nopad pointer">
+                <div class="imgholder">
+                    <p class="question">1. Какая первая строка у HTML документа?</p>
+                </div>
+                <div class="answers-wrap">
+                    <label><input type="radio" name="question1" value="0" required>&lthtml></label>
+                    <label><input type="radio" name="question1" value="0">&lthead></label>
+                    <label><input type="radio" name="question1" value="1">&lt!DOCTYPE html></label>
+                </div>
+            </div>
+            <div class="col bg nopad pointer">
+                <div class="imgholder">
+                    <p class="question">2. Какой тег определяет отображение элементов в окне браузера?</p>
+                </div>
+                <div class="answers-wrap">
+                    <label><input type="radio" name="question2" value="0" required>&lthead></label>
+                    <label><input type="radio" name="question2" value="1">&ltbody></label>
+                    <label><input type="radio" name="question2" value="0">&lthtml></label>
+                </div>
+            </div>
+            <div class="col bg nopad pointer">
+                <div class="imgholder">
+                    <p class="question">3. Какие теги отвечают за отображение заголовков?</p>
+                </div>
+                <div class="answers-wrap">
+                    <label><input type="radio" name="question3" value="0" required>&ltp></label>
+                    <label><input type="radio" name="question3" value="1">&lth></label>
+                    <label><input type="radio" name="question3" value="0">&lta></label>
+                </div>
+            </div>
+            <div class="col bg nopad pointer">
+                <div class="imgholder">
+                    <p class="question">4. С помощью чего задается внешний вид нашего документа?</p>
+                </div>
+                <div class="answers-wrap">
+                    <label><input type="radio" name="question4" value="1" required>CSS</label>
+                    <label><input type="radio" name="question4" value="0">HTML</label>
+                    <label><input type="radio" name="question4" value="0">PHP</label>
+                </div>
+            </div>
+            <div class="col bg nopad pointer">
+                <div class="imgholder">
+                    <p class="question">5. Какими тегами можно сделать текст надстрочным и задать ему полужирноу начертание?</p>
+                </div>
+                <div class="answers-wrap">
+                    <label><input type="radio" name="question5" value="0" required>&ltsub>, &ltem></label>
+                    <label><input type="radio" name="question5" value="0">&ltb>, &ltdel></label>
+                    <label><input type="radio" name="question5" value="1">&ltsup>,&ltb></label>
+                </div>
+            </div>
+            <div class="col bg nopad pointer">
+                <div class="imgholder">
+                    <p class="question">6. Какими тегами можно сделать текст подстрочным и задать ему курсивное начертание?</p>
+                </div>
+                <div class="answers-wrap">
+                    <label><input type="radio" name="question6" value="1" required>&ltsub>, &ltem></label>
+                    <label><input type="radio" name="question6" value="0">&ltb>, &ltdel></label>
+                    <label><input type="radio" name="question6" value="0">&ltsup>,&ltb></label>
+                </div>
+            </div>
+            <div class="col bg nopad pointer">
+                <div class="imgholder">
+                    <p class="question">7. С помощью каких тегов можно создать маркированный список и выделить текст подчеркнув его?</p>
+                </div>
+                <div class="answers-wrap">
+                    <label><input type="radio" name="question7" value="0" required>&ltdel>, &ltul></label>
+                    <label><input type="radio" name="question7" value="0">&ltol>, &ltdel></label>
+                    <label><input type="radio" name="question7" value="1">&ltul>,&ltins></label>
+                </div>
+            </div>
+            <div class="col bg nopad pointer">
+                <div class="imgholder">
+                    <p class="question">8. Используя какие теги можно добавить в документ таблицу с заголовком</p>
+                </div>
+                <div class="answers-wrap">
+                    <label><input type="radio" name="question8" value="1" required>&lttable>, &lttr>,&ltth></label>
+                    <label><input type="radio" name="question8" value="0">&lttable>, &lttd>,&ltth></label>
+                    <label><input type="radio" name="question8" value="0">&lttd>,&ltth>,&lttr></label>
+                </div>
+            </div>
+            <div class="sendForm">
+                <legend>Отправить ответы</legend> 
+                <input type="text" name="name" placeholder="Имя" required>
+                <button type="submit">Результат</button>
+            </div>
+            <div id="result">
+
+            </div>
+        </form>
+      </div>
+      <footer class="site-footer">
+        <div>
+          <div class="row">
+            <div class="first-block">
+              <h6>О нас</h6>
+              <p class="text-justify">Компания LearnHTML предоставляют бесплатный доступ к основам языка разметки гипертекста HTML5 и предлагают всем без исключения овладеть данными навыками для общего развития и для развития своих Hard skills.</p>
+            </div>
+  
+            <div class="second-block">
+              <h6>Категории</h6>
+              <ul class="footer-links">
+                <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML">HTML5</a></li>
+                <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS">CSS</a></li>
+                <li><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript">JavaScript</a></li>
+                <li><a href="https://developer.mozilla.org/ru/docs/Glossary/PHP">PHP</a></li>
+              </ul>
+            </div>
+  
+            <div class="last-block">
+              <h6>Навигация</h6>
+              <ul class="footer-links">
+                <li><a href="test.html">Тест</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="about.html">О нас</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div>
+          <div class="row-2">
+            <div>
+              <p class="copyright-text">Copyright &copy; 2022 все права защищены 
+              <a href="#">LearnHTML</a>.
+              </p>
+            </div>
+  
+            <div>
+              <ul class="social-icons">
+                <li><a class="fa fa-facebook" href="#"></a></li>
+                <li><a class="fa fa-twitter" href="#"></a></li>
+                <li><a class="fa fa-whatsapp" href="#"></a></li>
+                <li><a class="fa fa-linkedin" href="#"></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+</body>
+<script src="./src/js/script.js"></script>
+<script src="./src/js/test.js"></script>
+</html>

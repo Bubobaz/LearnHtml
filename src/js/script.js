@@ -1,6 +1,6 @@
 window.onscroll = function() {
-    var el = document.getElementsByClassName('header')[0];
-    var className = 'small';
+    var el = document.getElementsByClassName('header')[0],
+        className = 'small';
     if (el.classList) {
       if (window.scrollY > 10)
         el.classList.add(className);
