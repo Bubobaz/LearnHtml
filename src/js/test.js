@@ -14,5 +14,5 @@ $("form").submit(function(e) {
             result.show()
             $('button').attr("disabled", true)
         }
-    });
-});
+    })
+})

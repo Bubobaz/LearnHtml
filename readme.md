@@ -1,5 +1,5 @@
 <div align='center'>
-  <img src="img/HTML5_icon.png" alt="HTML5 Logo" width="100px">
+  <img src="./src/img/HTML5_icon.png" alt="HTML5 Logo" width="100px">
   
   <h1>Gh-pages <a href="https://dibrovgleb.github.io/LearnHtml/">Learn HTML</a></h1>
   <h2>Hosting <a href="http://dibrovgleb.std-1646.ist.mospolytech.ru/index.html">Learn HTML</a></h2>

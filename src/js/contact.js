@@ -15,5 +15,5 @@ $("form").submit(function(e) {
             alert(data)
             $('button').attr("disabled", true)
         }
-    });
-});
+    })
+})
