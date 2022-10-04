@@ -21,6 +21,7 @@ body {
 .container {
   position: relative;
   width: 1170px;
+  min-width: 250px;
   margin: 0 auto;
   color: #444;
   font-size: 14px;
@@ -160,7 +161,7 @@ h1.hero:after {
 }
 .code{
   width: fit-content;
-  height: 240px;
+  height: 250px;
   margin: 0 auto;
   background-color: #eee;
   border: 1px solid #3d7e9a;
@@ -181,6 +182,7 @@ h1.hero:after {
 .exmpl{
   margin: auto;
   width:60%;
+  min-width: 200px;
 }
 .col {
   float: left;
@@ -368,7 +370,9 @@ h2 {
     float: initial;
     display: inline-block;
   }
-  
+  .section .slider{
+    margin-top: 66px;
+  }
   .responsivegroup {
     display: block;
   }
@@ -401,13 +405,15 @@ h2 {
 }
 
 @media all and (max-width:450px) {
-
-.col.four, .col.three, .exmpl{
+  .section .slider{
+    margin-top: 147px;
+  }
+  .col.four, .col.three, .exmpl{
     float: none;
   }
   div.code{
     overflow-y: hidden;
-    width: auto;
+    width: 100%;
   }
 
   .col.extrapad {
@@ -533,6 +539,7 @@ h2 {
     text-align:center
   }
 }
+
 .social-icons
 {
   padding-left:0;
