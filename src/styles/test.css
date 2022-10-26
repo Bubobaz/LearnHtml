@@ -50,13 +50,14 @@ form{
     min-width: 280px;
 }
 .col.bg{
-    background: rgb(247, 247, 247);
+    background: rgb(247, 247, 247, 10%);
+    /* padding: 0px; */
 }
 .col .imgholder{
     height: 150px;
     display: block;
     line-height: 140%;
-    padding: 5px;
+    padding: 5px 15px;
 }
 
 .answers-wrap{
