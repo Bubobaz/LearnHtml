@@ -31,6 +31,7 @@ body {
 }
 .Teor{
     display: grid;
+    padding: 15px 0;
     color: rgb(53, 52, 52);
     justify-self: center;
     font-family: Roboto, 'Open Sans', Arial, sans-serif;
@@ -141,9 +142,8 @@ h1.hero:after {
 .col.Teor{
   max-width:80%;
   padding: 5px;
-  border-style: solid;
   border-radius: 20px;
-  box-shadow: 5px 4px 8px 4px #ccc;
+  box-shadow: 0px 0px 25px 5px rgb(1 1 1 / 25%) inset, 0px 0px 6px 5px rgb(1 1 1 / 35%);
 }
 .col.Teor:nth-child(2){
   margin: 50px 0 20px 0px;
@@ -167,7 +167,7 @@ h1.hero:after {
   margin: 0 auto;
   background-color: #fff;
   border-radius: 10px 20px 20px 10px;
-  box-shadow: 0px 0px 10px 3px rgb(1 1 1 / 30%) inset, 3px 3px 3px 0px rgb(1 1 1 / 30%);
+  box-shadow: 0px 0px 10px 3px rgb(1 1 1 / 30%) inset, 0px 0px 2px 1px rgb(1 1 1 / 42%);
 }
 .col.Teor ul{
   list-style-type: decimal;

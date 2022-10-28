@@ -27,19 +27,24 @@ form{
     gap: 15px;
 }
 .sendForm{
-    border-radius: 10px;
-    width: 280px;
-    height: 185px;
-    background-color: rgb(235, 235, 235);
-    display: grid;
-    justify-items: center;
-    align-items: center;
+  border-radius: 10px;
+  width: 290px;
+  height: 225px;
+  padding: 15px;
+  display: grid;
+  box-shadow: 0px 0px 6px 2px rgb(1 1 1 / 22%) inset;
+  align-items: center;
+  justify-items: center;
 }
 .sendForm input{
-    border: 0;
-    padding: 8px;
-    outline: 0;
-    border-radius: 5px;
+  padding: 9px;
+  outline: 0;
+  border-radius: 5px;
+  border: 1px solid #8f8f8f85;
+  box-shadow: 0px 0px 3px 1px rgb(1 1 1 / 20%) inset;
+}
+.sendForm input:focus{
+  box-shadow: 0px 2px 3px 0px rgb(1 1 1 / 20%);
 }
 .sendForm legend{
     color: #444444;
